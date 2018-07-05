@@ -5,7 +5,7 @@ date: 2018-07-04T11:22:18-07:00
 
 Tidyrisk is a collection of R packages for performing quantitative risk 
 management using the [OpenFAIR](https://www2.opengroup.org/ogsys/catalog/C13G) framework. Aspiring to the design ethos of 
-the [tidyverse](https://tidyverse.org) and [tidyquant](https://tidyquant.org) 
+the [tidyverse](https://tidyverse.org) and [tidyquant](https://business-science.github.io/tidyquant/) 
 projects, the tidyrisk packages help organizations walk through the following 
 steps in performing a risk analysis:
 
