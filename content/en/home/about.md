@@ -9,7 +9,7 @@ performing quantitative risk management using the
 design ethos of the [tidyverse](https://tidyverse.org), tidyrisk helps 
 organizations walk through the following steps in performing a risk analysis:
 
-{{< start_centered_list >}}
+{{% centered_list %}}
 
 -  formulating risk scenarios
 -  collecting subject matter expert (SME) opinion with calibration
@@ -19,4 +19,4 @@ organizations walk through the following steps in performing a risk analysis:
 -  simulating risk outcomes via Monte Carlo sampling
 -  reporting on risk exposure
 
-{{< end_centered_list>}}
+{{% /centered_list %}}
