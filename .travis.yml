@@ -6,6 +6,8 @@ branches:
 
 install:
   - go get -tags 'extended' github.com/gohugoio/hugo
+  - npm install -g autoprefixer
+  - npm install -g postcss-cli
   - rm -rf public || exit 0 # cleanup previous run
 
 script:
