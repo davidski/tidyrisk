@@ -58,7 +58,7 @@ DefaultContentLanguage      = "en"                         # languageCode
         languageCode     = "en-us"
         contentDir       = "content/en"
         weight           = 0
-        title            = "tidyrisk - Making Quant Risk Tidy" # Site title
+        title            = "Tidyrisk" # Site title
         [languages.en.params]
-            description             = "Quantitative Risk Management in R"             # Max 160 characters show in search results
-            footerText              = ""                                # Text to override default footer text (markdown allowed)
+            description             = "R packages for quantitative risk management"             # Max 160 characters show in search results
+            footerText              = "(c)2019 - David F. Severski"                                # Text to override default footer text (markdown allowed)
