@@ -1,56 +1,57 @@
-baseURL                     = "https://tidyrisk.org/"            # Your domain name. Must end with "/"
-languageCode                = "en-us"                           # languageCode
-title                       = "tidyrisk - Making Quant Risk Tidy" # Site title
+baseURL                     = "https://tidyrisk.org/"      # Your domain name. Must end with "/"
 theme                       = "introduction"
-pygmentsStyle               = "monokai"                         # https://help.farbox.com/pygments.html
-pygmentsCodefences          = true
-enforce_ssl                 = true
-# disqusshortname           = ""                                # Enable Disqus for comments https://gohugo.io/content-management/comments
-# googleAnalytics           = ""                                # Enable Google Analytics https://gohugo.io/templates/internal/#google-analytics
+DefaultContentLanguage      = "en"                         # languageCode
+# disqusshortname           = ""                           # Enable Disqus for comments https://gohugo.io/content-management/comments
+# googleAnalytics           = ""                           # Enable Google Analytics https://gohugo.io/templates/internal/#google-analytics
 
 [params]
-    firstName               = "Tidyrisk"                    # First name shows in introduction on main page
-    tagLine                 = "R packages for quantitative risk management."           # Appears after the introduction
-    introHeight             = "large"                           # Input either 'medium' or 'large' or 'fullheight'
-    themeStyle              = "light"                           # Choose 'light' or 'dark'
-#    avatar                  = "img/profile.jpg"                 # Path to image in static folder eg. img/avatar.png, or comment out to remove
-    email                   = "davidski@deadheaven.com"             # Shows in contact section, or leave blank to omit
-    localTime               = false                              # Show your current local time in contact section
-    timeZone                = "America/Los_Angeles"             # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-    dateForm                = "Jan 2, 2006"
-    dateFormFull            = "Mon Jan 2 2006 15:04:05 EST"
-    cacheBuster             = false                             # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
-    description             = "Website Description"             # Max 160 characters show in search results
-    faviconFile             = "img/fav.ico"
-    footerText              = ""                                # Text to override default footer text (markdown allowed)
-    fadeIn                  = true                              # Turn on/off the fade-in effect
-    customCSS               = []                                # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
+    themeStyle              = "light"                      # Choose 'light' or 'dark'
+    favicon                 = "/img/fav.ico"
+    showRSSButton           = false
+    fadeIn                  = false                         # Turn on/off the fade-in effect
+    dateFormat              = "Jan 2, 2006"
+    email                   = "davidski@deadheaven.com"    # Shows in contact section, or leave blank to omit
+    #customCSS               = []                          # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
 
-    showBlog                = false                              # Show Blog section on home page
-    showAllPosts            = false                             # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
-    showLatest              = false                              # Show latest blog post summary
+    # Configure the home page
+    [params.home]
+        introHeight             = "fullheight"                  # Input either 'medium' or 'large' or 'fullheight'
+        showLatest              = false                    # Show latest blog post summary
+        showAllPosts            = false                    # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
+        numberOfProjectsToShow  = 2                        # Maximum number of projects to show on home page. Unset or comment out to show all projects.
+
+        localTime               = false                    # Show your current local time in contact section
+        timeZone                = "America/Los_Angeles"    # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+    [params.projects]
+        useTwoColumns       = true                         # use a layout with two columns instead of three
+
     # Share buttons on blog post pages
-    shareButtons            = true                              # Show "Share this:" social buttons
-    shareTwitter            = true
-    shareFacebook           = false
-    sharePinterest          = false
-    shareGooglePlus         = true
-    
-    showProjects            = true                              # Show Projects section on home page
-#    numberOfProjectsToShow  = 2                                 # Maximum number of projects to show on home page. Unset or comment out to show all projects.
-    placeHolderimg          = "/img/workday.jpg"                # For Projects without image
+    [params.share]
+        twitter            = true
+        facebook           = false
+        googlePlus         = false
+        pinterest          = false
 
-# Social icons appear in introduction and contact section. Add as many more as you like.
-# Find icon names here: http://fontawesome.io/cheatsheet/
+    # Social icons appear in introduction and contact section. Add as many more as you like.
+    # Find icon names here: http://fontawesome.io/cheatsheet/
+    [[params.social]]
+        url  = "https://twitter.com/dseverski"
+        icon = "twitter"
+    [[params.social]]
+        url  = "https://github.com/davidski"
+        icon = "github"
+    [[params.social]]
+        url  = "https://linkedin.com/in/davidseverski"
+        icon = "linkedin"
 
-[[params.social]]
-    url  = "https://twitter.com/dseverski"
-    icon = "twitter"
-
-[[params.social]]
-    url  = "https://github.com/davidski"
-    icon = "github"
-
-[[params.social]]
-    url  = "https://linkedin.com/in/davidseverski"
-    icon = "linkedin"
+[languages]
+    [languages.en]
+        languageName     = "English"
+        languageCode     = "en-us"
+        contentDir       = "content/en"
+        weight           = 0
+        title            = "tidyrisk - Making Quant Risk Tidy" # Site title
+        [languages.en.params]
+            description             = "Quantitative Risk Management in R"             # Max 160 characters show in search results
+            footerText              = ""                                # Text to override default footer text (markdown allowed)
