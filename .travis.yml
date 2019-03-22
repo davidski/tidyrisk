@@ -5,10 +5,11 @@ branches:
     - master
 
 install:
+  - go get github.com/spf13/hugo
   - rm -rf public || exit 0 # cleanup previous run
 
 script:
-  - binaries/hugo # generate!
+  - hugo # generate!
 
 deploy:
   provider: s3
