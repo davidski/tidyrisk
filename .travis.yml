@@ -5,7 +5,7 @@ branches:
     - master
 
 install:
-  - go get github.com/spf13/hugo
+  - go get github.com/gohugoio/hugo -tags 'extended'
   - rm -rf public || exit 0 # cleanup previous run
 
 script:
