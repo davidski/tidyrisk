@@ -1,0 +1,15 @@
+language: go
+
+branches:
+  only:
+    - master
+
+install:
+  - rm -rf public || exit 0 # cleanup previous run
+
+script:
+  - binaries/hugo # generate!
+
+deploy:
+  provider: s3
+  local-dir: public
