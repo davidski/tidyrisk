@@ -38,12 +38,19 @@ DefaultContentLanguage      = "en"                         # languageCode
     [[params.social]]
         url  = "https://twitter.com/dseverski"
         icon = "twitter"
+        icon_pack = "fab"
     [[params.social]]
         url  = "https://github.com/davidski"
         icon = "github"
+        icon_pack = "fab"
     [[params.social]]
         url  = "https://linkedin.com/in/davidseverski"
         icon = "linkedin"
+        icon_pack = "fab"
+    [[params.social]]
+        url = "mailto:davidski@deadheaven.com"  # For a direct email link, use "mailto:test@example.org".
+        icon = "paper-plane" # icon name without the 'fa-'
+        icon_pack = "fas"
 
 [languages]
     [languages.en]
