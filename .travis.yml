@@ -5,7 +5,7 @@ branches:
     - master
 
 install:
-  - go get github.com/gohugoio/hugo -tags 'extended'
+  - go get -tags 'extended' github.com/gohugoio/hugo
   - rm -rf public || exit 0 # cleanup previous run
 
 script:
