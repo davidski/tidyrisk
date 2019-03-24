@@ -3,12 +3,14 @@ branches:
   only:
   - master
 install:
-- go get -d -v github.com/gohugoio/hugo@v0.54.0
-- go build -o hugo -tags 'extended' github.com/gohugoio/hugo
+- go get github.com/gohugoio/hugo
+#- go get -d -v github.com/gohugoio/hugo@v0.54.0
+#- go build -o hugo -tags 'extended' github.com/gohugoio/hugo
 - npm install -g autoprefixer
 - npm install -g postcss-cli
 - rm -rf public || exit 0
 script:
+- hugo version
 - hugo
 deploy:
   provider: s3
