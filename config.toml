@@ -61,4 +61,4 @@ DefaultContentLanguage      = "en"                         # languageCode
         title            = "Tidyrisk" # Site title
         [languages.en.params]
             description             = "R packages for quantitative risk management"             # Max 160 characters show in search results
-            footerText              = "(c)2019 - David F. Severski"                                # Text to override default footer text (markdown allowed)
+            footerText              = "Millions of Americans struggle with mental illness. Consider donating to [NAMI](https://www.nami.org/)."
