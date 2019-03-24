@@ -9,8 +9,8 @@ install:
 #- go build -o hugo -tags 'extended' github.com/gohugoio/hugo
 #- wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.deb
 #- sudo dpkg -i /tmp/hugo.deb
-- wget -O /tmp https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.tar.gz
-- tar -xzf /tmp/hugo_extended_0.54.0_Linux-64bit.tar.gz -C /tmp
+- wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.tar.gz
+- tar -xzf /tmp/hugo.tar.gz -C /tmp
 - npm install -g autoprefixer
 - npm install -g postcss-cli
 - rm -rf public || exit 0
