@@ -4,9 +4,11 @@ branches:
 env:
   - HUGO_VERSION="0.54.0"
 install:
-- wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-- tar xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-- mv hugo ~/bin/
+- GO111MODULE=off go get -u github.com/myitcv/gobin
+- gobin github.com/gohugo/hugo@v${HUGO_VERSION}
+#- wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+#- tar xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+#- mv hugo ~/bin/
 - npm install -g autoprefixer
 - npm install -g postcss-cli
 - rm -rf public || exit 0
