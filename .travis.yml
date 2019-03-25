@@ -1,16 +1,17 @@
+dist: xenial
 branches:
   only:
   - master
 env:
   - HUGO_VERSION="0.54.0"
 install:
-- wget -q https://github.com/myitcv/gobin/releases/download/v0.0.9/linux-amd64
-- mv linux-amd64 ~/bin/gobin
-- chmod u+x ~/bin/gobin
-- gobin github.com/gohugoio/hugo@v${HUGO_VERSION}
-#- wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-#- tar xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-#- mv hugo ~/bin/
+#- wget -q https://github.com/myitcv/gobin/releases/download/v0.0.9/linux-amd64
+#- mv linux-amd64 ~/bin/gobin
+#- chmod u+x ~/bin/gobin
+#- gobin github.com/gohugoio/hugo@v${HUGO_VERSION}
+- wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+- tar xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+- mv hugo ~/bin/
 - npm install -g autoprefixer
 - npm install -g postcss-cli
 - rm -rf public || exit 0
