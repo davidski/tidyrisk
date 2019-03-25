@@ -4,7 +4,8 @@ branches:
 env:
   - HUGO_VERSION="0.54.0"
 install:
-- GO111MODULE=off go get -u github.com/myitcv/gobin
+- wget -q https://github.com/myitcv/gobin/releases/download/v0.0.9/linux-amd64
+- mv linux-amd64 ~/bin/gobin
 - gobin github.com/gohugo/hugo@v${HUGO_VERSION}
 #- wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
 #- tar xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
