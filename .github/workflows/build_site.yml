@@ -23,11 +23,11 @@ jobs:
 
       - name: Install NPM dependencies
         run: |
-          npm install autoprefixer
-          npm install postcss-cli
+          npm install autoprefixer@9.8.6
+          npm install postcss postcss-cli
 
       - name: Build
-        run: hugo --minify
+        run: hugo
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
