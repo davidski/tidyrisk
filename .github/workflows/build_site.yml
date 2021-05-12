@@ -1,6 +1,7 @@
 name: Build site
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master  # Set a branch to deploy
