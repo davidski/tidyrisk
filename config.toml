@@ -15,7 +15,7 @@ DefaultContentLanguage      = "en"                         # languageCode
     tabWidth = 4
 
 [params]
-    themeStyle              = "light"                      # Choose 'light' or 'dark'
+    themeStyle              = "dark"                      # Choose 'light' or 'dark'
     favicon                 = "/img/fav.ico"
     showRSSButton           = false
     fadeIn                  = false                         # Turn on/off the fade-in effect
@@ -38,7 +38,7 @@ DefaultContentLanguage      = "en"                         # languageCode
 
     # Share buttons on blog post pages
     [params.share]
-        twitter            = true
+        twitter            = false
         facebook           = false
         googlePlus         = false
         pinterest          = false
@@ -46,8 +46,8 @@ DefaultContentLanguage      = "en"                         # languageCode
     # Social icons appear in introduction and contact section. Add as many more as you like.
     # Find icon names here: http://fontawesome.io/cheatsheet/
     [[params.social]]
-        url  = "https://twitter.com/dseverski"
-        icon = "twitter"
+        url  = "https://mastodon.social/@davidski"
+        icon = "mastodon"
         icon_pack = "fab"
     [[params.social]]
         url  = "https://github.com/davidski"
